@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+body{
+  background: #f2f2f2;
+}
+
+
+  /* navbar */
+  .section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s ease;
+    
+  }
+.nav-bar{
+  background: white;
+  padding: 35px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.left_area {
+  float: left;
+  color: black;
+  margin-top: -15px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+  transition: all 0.4s ease;
+}
+
+
+.name {
+  font-size: 20px;
+  color: #737373;
+}
+.right_area { 
+  float: right;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #737373;
+  transition-property: background;
+  margin-top: -14px;
+}
+
+.logout_btn {
+  padding: 5px;
+  background: #19B3D3;
+  margin-left: 10px;
+  margin-right: 40px;
+  color: black;
+  transition: 0.5s;
+  border-radius: 4px;
+  border: none;
+}
+
+.logout_btn:hover {
+  background: #0D9DBB;
+}
+
+
+/* sidebar */
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 80%;
+  margin-top: 110px;
+  margin-left: 30px;
+  left: 0px;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+}
+nav ul{
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li a{
+  margin-top: 10px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+
+
+/* mobilesidebar */
+
+.btn {
+  position: absolute;
+  top: 8px;
+  left: -40px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  position: fixed;
+  color: black;
+  font-size: 28px;
+  line-height: 45px;
+  /* transition: left 0.4s ease; */
+
+}
+/* .btn.click {
+  left: 250px;
+  
+} */
+.sidebar.show{
+  left: 0px;
+
+}
+
+/* responsiveness */
+
+/* 
+@media screen and (max-width:1611px) {
+  .right_area{
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width:1600px) {
+.right_area{
+  margin-right: 12px;
+}
+}
+@media screen and (max-width:1550px) {
+.right_area{
+  margin-right: 15px;
+}
+}
+@media screen and (max-width:1500px) {
+.right_area{
+  margin-right: 20px;
+}
+}
+@media screen and (max-width:1450px) {
+.right_area{
+  margin-right: 25px;
+}
+}
+@media screen and (max-width:1425px) {
+.right_area{
+  margin-right: 30px;
+}
+}
+@media screen and (max-width:1400px) {
+.right_area{
+  margin-right: 35px;
+}
+}
+@media screen and (max-width:1350px) {
+.right_area{
+  margin-right: 50px;
+}
+}
+@media screen and (max-width:1300px) {
+.right_area{
+  margin-right: 55px;
+}
+}
+@media screen and (max-width:1250px) {
+.right_area{
+  margin-right: 60px;
+}
+}
+@media screen and (max-width:1200px) {
+.right_area{
+  margin-right: 65px;
+}
+} */
+@media screen and (max-width:1157px) {
+  /* .right_area{
+    margin-right: 65px;
+  }*/
+  .left_area {
+    margin-left: 70px;
+  } 
+  .section {
+    left: 0px;
+    width: 100%;
+    transition: 0ms;
+  }
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 250px;
+    height: 80%;
+    left: -280px;
+    background: #1b1b1b;
+    transition: all 0.4s ease;
+  }
+
+  
+  .btn{
+    left: 20px;
+    transition: all 0.4s ease;
+  }
+}
+/* @media screen and (max-width:1150px) {
+.right_area{
+  margin-right: 67px;
+}
+}
+@media screen and (max-width:1100px) {
+.right_area{
+  margin-right: 70px;
+}
+}
+@media screen and (max-width:1050px) {
+.right_area{
+  margin-right: 80px;
+}
+}
+
+@media screen and (max-width:993px) {
+.right_area{
+  margin-right: 05px;
+}
+
+}
+@media screen and (max-width:950px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:800px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:850px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:800px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:750px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:700px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:650px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:600px) {
+.right_area{
+  margin-right: 05px;
+}
+}
+@media screen and (max-width:550px) {
+.right_area{
+  margin-right: 05px;
+}
+} */
